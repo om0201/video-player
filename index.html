@@ -9,17 +9,39 @@
     <title>Document</title>
   </head>
   <body>
-    <h2>Lorem, ipsum.</h2>
+    <div class="player-section">
+      <h2>Lorem, ipsum.</h2>
 
-    <input type="file" name="" id="select-file" accept="mp3" />
+      <input
+        type="file"
+        name=""
+        id="select-file"
+        accept="mp3"
+        webkitdirectory="true"
+        directory="true"
+        multiple
+      />
+
+      <button class="btn prev-btn" disabled>⏮️</button>
+      <button class="btn pl-btn" disabled>⏯️</button>
+      <button class="btn next-btn" disabled>⏭️</button>
+
+      <input type="range" class="vol" min="0" max="10" value="7" disabled />
+
+      <audio class="player" src=""></audio>
+    </div>
 
     <hr />
+
+    <div class="list"></div>
+
+    <!-- <hr />
     <audio class="current-music" controls src=""></audio>
 
     <img width="200" height="200" src="" class="cover" alt="Song Img" />
     <hr />
 
-    <button class="pl-ps">></button>
+    <button class="pl-ps">||</button> -->
 
     <script src="app.js"></script>
   </body>
